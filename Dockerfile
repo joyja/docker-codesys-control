@@ -10,7 +10,7 @@ RUN apt-get update && \
 # Add CODESYS package
 #
 # download package and extract it
-RUN wget --output-document=codesys.package 'https://store.codesys.com/ftp_download/3S/LinuxSL/2302000005/3.5.14.30/CODESYS%20Control%20for%20Linux%20SL%203.5.14.30.package' && \
+RUN wget --output-document=codesys.package 'https://store.codesys.com/ftp_download/3S/LinuxSL/2302000005/4.2.0.0/CODESYS%20Control%20for%20Linux%20SL%204.2.0.0.package' && \
     unzip -p codesys.package '*.deb' > codesys.deb
 
 # install
