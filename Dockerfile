@@ -15,8 +15,8 @@ RUN wget --output-document=codesys.package 'https://store.codesys.com/ftp_downlo
     unzip -p codesys.package '*codesys*.deb' > codesys.deb
 
 # install
-RUN apt-get install ./codemeter.deb
-RUN apt-get install ./codesys.deb
+RUN apt-get install -y ./codemeter.deb
+RUN apt-get install -y ./codesys.deb
 
 WORKDIR /var/opt/codesys/
 CMD [ "/opt/codesys/bin/codesyscontrol.bin", "/etc/CODESYSControl.cfg" ]
