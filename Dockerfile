@@ -19,4 +19,4 @@ RUN apt-get install -y ./codemeter.deb
 RUN apt-get install -y ./codesys.deb
 
 WORKDIR /var/opt/codesys/
-CMD [ "/opt/codesys/bin/codesyscontrol.bin"]
+CMD [ "/opt/codesys/bin/codesyscontrol.bin", "/etc/CODESYSControl.cfg"]
