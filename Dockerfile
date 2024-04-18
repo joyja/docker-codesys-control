@@ -10,7 +10,7 @@ RUN apt-get update && \
 # Add CODESYS package
 #
 # download package and extract it
-RUN wget --output-document=codesys.package 'https://store-archive.codesys.com/ftp_download/3S/LinuxSL/2302000005/4.8.0.0/CODESYS%20Control%20for%20Linux%20SL%204.8.0.0.package' && \
+RUN wget --output-document=codesys.package 'https://store-archive.codesys.com/ftp_download/3S/LinuxSL/2302000005/4.11.0.0/CODESYS%20Control%20for%20Linux%20SL%204.11.0.0.package' && \
     unzip -p codesys.package '*codemeter*.deb' > codemeter.deb && \
     unzip -p codesys.package '*codesys*.deb' > codesys.deb
 
